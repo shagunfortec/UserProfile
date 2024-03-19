@@ -1,0 +1,17 @@
+ import React from "react";
+import { UserProvider } from "../src/context/UserContext";
+import UserProfile from "./componenets/UserProfile";
+import UserForm from "./componenets/UserForm";
+
+function App() {
+  return (
+    <UserProvider>
+      <div className="App">
+        <UserProfile />
+        <UserForm />
+      </div>
+    </UserProvider>
+  );
+}
+
+export default App;
