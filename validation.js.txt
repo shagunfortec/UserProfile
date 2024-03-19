@@ -1,0 +1,4 @@
+ export const validateEmail = (email) => {
+  // Simple email validation logic
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+};
